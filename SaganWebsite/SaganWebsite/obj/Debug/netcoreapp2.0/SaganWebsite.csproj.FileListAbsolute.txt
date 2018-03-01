@@ -1,0 +1,11 @@
+C:\Users\Jacob\source\repos\SaganWebsite\SaganWebsite\bin\Debug\netcoreapp2.0\SaganWebsite.deps.json
+C:\Users\Jacob\source\repos\SaganWebsite\SaganWebsite\bin\Debug\netcoreapp2.0\SaganWebsite.runtimeconfig.json
+C:\Users\Jacob\source\repos\SaganWebsite\SaganWebsite\bin\Debug\netcoreapp2.0\SaganWebsite.runtimeconfig.dev.json
+C:\Users\Jacob\source\repos\SaganWebsite\SaganWebsite\bin\Debug\netcoreapp2.0\SaganWebsite.dll
+C:\Users\Jacob\source\repos\SaganWebsite\SaganWebsite\bin\Debug\netcoreapp2.0\SaganWebsite.pdb
+C:\Users\Jacob\source\repos\SaganWebsite\SaganWebsite\obj\Debug\netcoreapp2.0\SaganWebsite.csprojResolveAssemblyReference.cache
+C:\Users\Jacob\source\repos\SaganWebsite\SaganWebsite\obj\Debug\netcoreapp2.0\SaganWebsite.csproj.CoreCompileInputs.cache
+C:\Users\Jacob\source\repos\SaganWebsite\SaganWebsite\obj\Debug\netcoreapp2.0\SaganWebsite.AssemblyInfoInputs.cache
+C:\Users\Jacob\source\repos\SaganWebsite\SaganWebsite\obj\Debug\netcoreapp2.0\SaganWebsite.AssemblyInfo.cs
+C:\Users\Jacob\source\repos\SaganWebsite\SaganWebsite\obj\Debug\netcoreapp2.0\SaganWebsite.dll
+C:\Users\Jacob\source\repos\SaganWebsite\SaganWebsite\obj\Debug\netcoreapp2.0\SaganWebsite.pdb

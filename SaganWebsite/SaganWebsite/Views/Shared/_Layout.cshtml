@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - SaganWebsite</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="~/images/Sagan-Gaming.png" alt="logo" class="logo" />
+            <nav>
+                <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Roster">Roster</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Media">Media</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="siderright" style="text-align:center">
+
+        <h2><img src="~/images/Matches (1).png"/></h2>
+        <p> Sagan - SK.Gaming | <span style="color:green">16</span> - <span style="color:red">14</span></p>
+    </div>
+    <div class="siderright2">
+
+        <h2><img src="~/images/Sponsored-by.png"/></h2>
+        <p><img src="~/images/pcdata_logo.png" class="sponsimg"/></p>
+        <p><img src="~/images/varbergssparbank_black.png" class="sponsimg"/></p>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
