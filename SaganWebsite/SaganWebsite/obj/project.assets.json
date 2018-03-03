@@ -13132,11 +13132,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jacob\\source\\repos\\SaganWebsite\\SaganWebsite\\SaganWebsite.csproj",
+      "projectUniqueName": "C:\\Users\\Jacob\\Source\\Repos\\Website\\SaganWebsite\\SaganWebsite\\SaganWebsite.csproj",
       "projectName": "SaganWebsite",
-      "projectPath": "C:\\Users\\Jacob\\source\\repos\\SaganWebsite\\SaganWebsite\\SaganWebsite.csproj",
+      "projectPath": "C:\\Users\\Jacob\\Source\\Repos\\Website\\SaganWebsite\\SaganWebsite\\SaganWebsite.csproj",
       "packagesPath": "C:\\Users\\Jacob\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jacob\\source\\repos\\SaganWebsite\\SaganWebsite\\obj\\",
+      "outputPath": "C:\\Users\\Jacob\\Source\\Repos\\Website\\SaganWebsite\\SaganWebsite\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
