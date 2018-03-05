@@ -16,6 +16,8 @@ header {
     height: 75px;
     background: #55d6aa;
     border: 5px solid #111;
+    position: sticky;
+    top: 0;
 }
 
 header::after {
@@ -26,16 +28,21 @@ header::after {
 
 .logo {
     float: left;
+    position: relative;
+    left: -50px;
 }
 
 nav {
     float: right;
+    position: fixed;
+    right: 0;
 }
 
 nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    float: right;
 }
 
 nav li {
