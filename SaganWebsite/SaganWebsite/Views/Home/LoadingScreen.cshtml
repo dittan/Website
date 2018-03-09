@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewData["Title"] = "LoadingScreen";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="~/css/loadpage.css" />
+</head>
+
+<body>
+    <div id="mainload">
+        <div class="headtext">
+            <h1>Sagan-Gaming</h1>
+        </div>
+        <div id="loading">
+            <div>G</div>
+            <div>N</div>
+            <div>I</div>
+            <div>D</div>
+            <div>A</div>
+            <div>O</div>
+            <div>L</div>
+        </div>
+        <div class="progress-bar">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script>
+        (function () {
+
+            var mainload = document.getElementById("mainload");
+            var loading = 0;
+            var id = setInterval(frame, 64);
+
+
+                    function frame() {
+                        if (loading == 100) {
+                            clearInterval(id);
+                            window.open("Home/Index", "_self")
+
+                        } else {
+                            loading = loading + 1;
+                            if (loading == 90) {
+                                mainload.style.animation = "fadeout 1s ease";
+
+                            }
+
+                        }
+
+                    }
+        })();
+    </script>
+</body>
+</html>
+

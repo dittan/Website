@@ -20,6 +20,11 @@ namespace SaganWebsite.Controllers
             return View();
         }
 
+        public IActionResult LoadingScreen()
+        {
+            return View();
+        }
+
         public IActionResult Media()
         {
             return View();
