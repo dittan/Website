@@ -14,7 +14,8 @@
 
 header {
     height: 75px;
-    background: #55d6aa;
+    background: -webkit-linear-gradient(top left, #84DD63, #009970);
+    background: linear-gradient(to bottom right, #84DD63, #009970);
     border: 5px solid #111;
     position: sticky;
     top: 0;
@@ -82,13 +83,18 @@ nav a:hover::before {
 }
 
 .siderright {
-    background-color: #55d6aa;
+    background: -webkit-linear-gradient(top left, #84DD63, #009970);
+    background: linear-gradient(to bottom right, #84DD63, #009970);
     float: right;
     margin: 10px;
     padding: 20px;
     font-size: 105%;
     width: 260px;
     border: 5px solid #111;
+}
+
+.siderright {
+    color: black;
 }
 
 .siderright h2 img {
@@ -98,7 +104,8 @@ nav a:hover::before {
 }
 
 .siderright2 {
-    background-color: #55d6aa;
+    background: -webkit-linear-gradient(top left, #84DD63, #009970);
+    background: linear-gradient(to bottom right, #84DD63, #009970);
     float: right;
     margin: 10px;
     padding: 20px;
@@ -121,128 +128,101 @@ nav a:hover::before {
     width: 250px;
 }
 
-.team_member {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    height: 350px;
-    border: 5px solid #55d6aa;
-}
-
-.info {
-    height: 100%;
-}
-
-.info img {
-     width: 222px;
-     height: 222px;
-     transition: all .4s ease-out .1s;
-     -moz-transition: all .4s ease-out .1s;
-     -webkit-transition: all .4s ease-out .1s;
-}
-
-.info h5 {
-    padding: 10px 10px 0 0;
-    margin: 0 0 10px 3px;
-    line-height: 1em;
-    opacity: 1;
-    transition: all .2s ease-out .1s;
-    -moz-transition: all .2s ease-out .1s;
-    -webkit-transition: all .2s ease-out .1s;
-    font-size: 1.125em;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.info h6 {
-    padding:0 10px 0 0;
-    font-size:12px;
-    margin:0 0 0 3px;
-    line-height:1em;
-    text-transform:uppercase;
-    color:#999;
-    opacity:1;
-    transition: all .2s ease-out .1s;
-    -moz-transition: all .2s ease-out .1s;
-    -webkit-transition: all .2s ease-out .1s;
-}
-
-.info_reveal {
-    height: 100%;
-    transition: all .3s ease-in 0s;
-    -moz-transition: all .3s ease-in 0s;
-    -webkit-transition: all .23s ease-in 0s;
-    position: absolute;
-    width: 100%;
+#container {
+    width: auto;
+    height: auto;
+    margin-top: 120px;
+    -webkit-perspective: 800px;
+    perspective: 800px;
     text-align: center;
-    top: -100%;
-    background: rgba(19,148,119,0.9);
 }
 
-.info_reveal h3{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #073a2e;
+#container h1 {
+        color: #fff;
+        margin-bottom: 30px;
 }
 
-.info_reveal p {
-    padding:0 8px;
-    font-size: 15px;
-    line-height: 0.8em;
-    color: #073a2e;
-    font-weight: 200;  
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+#container > hr {
+        border: none;
+        border: 1px solid #fff;
+        width: 60%;
 }
 
-.info_reveal a:hover {
-    color: #073a2e;
+.card {
+    display: inline-block;
+    position: relative;
+    width: 220px;
+    height: 260px;
+    opacity: 0.85;
+    margin: 40px;
 }
 
-.responsive_grid {
-    display: block;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    float: left;
-    overflow: auto;
-    width: 900px;
-    clear: left;
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 300ms;
+    transition: -webkit-transform 300ms;
+    transition: transform 300ms;
+    transition: transform 300ms, -webkit-transform 300ms;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    border-radius: 5px;
 }
 
-.responsive_grid li {
-     cursor: pointer;
-     width: 24.66667%;
-     padding: 0 20px 20px;
-     display: block;
-     height: auto;
-     float: left;
-     margin-bottom: 10px;
- }
-
-.responsive_grid li:hover .info_reveal,
-.responsive_grid li:focus .info_reveal {
-     left: 0;
-     top: 0;
-     transition: all .3s ease-out .1s;
-     -moz-transition: all .3s ease-out .1s;
-     -webkit-transition: all .3s ease-out .1s;
+.front {
+    transform: rotateY(0deg);
+    background: -webkit-linear-gradient(top left, #84DD63, #009970);
+    background: linear-gradient(to bottom right, #84DD63, #009970);
+    text-align: center;
+    padding: 30px;
 }
 
-.responsive_grid li:hover .info img,
-.responsive_grid li:focus .info img {
-      width: 210%;
-      margin-left: -50%;
-      transition: all .4s ease-in 0s;
-      -moz-transition: all .4s ease-in 0s;
-      -webkit-transition: all .4s ease-in 0s;
+.back {
+    background: -webkit-linear-gradient(top left, #009970, #84DD63);
+    background: linear-gradient(to bottom right, #009970, #84DD63);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    padding: 30px;
+    color: #fff;
 }
 
-.responsive_grid li:hover .info h5,
-.responsive_grid li:focus .info h5,
-.responsive_grid li:hover .info h6,
-.responsive_grid li:focus .info h6 {
-       opacity: 0;
-       transition: opacity .2s linear 0s;
-       -moz-transition: opacity .2s linear 0s;
-       -webkit-transition: opacity .2s linear 0s;
+.card:hover .front {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.card:hover .back {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.front .profilimage {
+    height: 120px;
+    width: 120px;
+    border: 5px solid #B2DBBF;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.front .name {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+}
+
+.front .role {
+    color: #fff;
+}
+
+.front hr {
+    border: none;
+    color: #B2DBBF;
+    border: 1px solid;
 }
 
 .contentNews {
@@ -270,6 +250,6 @@ nav a:hover::before {
 }
 
 .contentVideo {
-    border: 5px solid #55d6aa;
+    border: 5px solid #84DD63;
     width: 700px;
 }
