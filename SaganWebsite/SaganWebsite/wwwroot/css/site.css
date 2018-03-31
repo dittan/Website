@@ -13,12 +13,13 @@
 }
 
 header {
-    height: 75px;
-    background: -webkit-linear-gradient(top left, #84DD63, #009970);
-    background: linear-gradient(to bottom right, #84DD63, #009970);
+    background: #8D1725;
+    background: -webkit-linear-gradient(to right, #EA384D, #8D1725);
+    background: linear-gradient(to right, #EA384D, #8D1725);
     border: 5px solid #111;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 header::after {
@@ -29,13 +30,18 @@ header::after {
 
 .logo {
     float: left;
+    padding: 20px 0;
     position: relative;
-    left: -50px;
+}
+
+.header .logo img {
+    width: 150px;
+    height: auto;
 }
 
 nav {
     float: right;
-    position: fixed;
+    padding-top: 21px;
     right: 0;
 }
 
@@ -54,7 +60,7 @@ nav li {
 }
 
 nav a {
-    color: #444;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -69,7 +75,7 @@ nav a::before {
     display: block;
     height: 5px;
     width: 100%;
-    background-color: #444;
+    background-color: white;
 
     position: absolute;
     top: 0;
@@ -83,8 +89,9 @@ nav a:hover::before {
 }
 
 .siderright {
-    background: -webkit-linear-gradient(top left, #84DD63, #009970);
-    background: linear-gradient(to bottom right, #84DD63, #009970);
+    background: #8D1725;
+    background: -webkit-linear-gradient(to right, #EA384D, #8D1725);
+    background: linear-gradient(to right, #EA384D, #8D1725);
     float: right;
     margin: 10px;
     padding: 20px;
@@ -104,8 +111,9 @@ nav a:hover::before {
 }
 
 .siderright2 {
-    background: -webkit-linear-gradient(top left, #84DD63, #009970);
-    background: linear-gradient(to bottom right, #84DD63, #009970);
+    background: #8D1725;
+    background: -webkit-linear-gradient(to right, #EA384D, #8D1725);
+    background: linear-gradient(to right, #EA384D, #8D1725);
     float: right;
     margin: 10px;
     padding: 20px;
@@ -172,15 +180,17 @@ nav a:hover::before {
 
 .front {
     transform: rotateY(0deg);
-    background: -webkit-linear-gradient(top left, #84DD63, #009970);
-    background: linear-gradient(to bottom right, #84DD63, #009970);
+    background: #8D1725;
+    background: -webkit-linear-gradient(to right, #EA384D, #8D1725);
+    background: linear-gradient(to right, #EA384D, #8D1725);
     text-align: center;
     padding: 30px;
 }
 
 .back {
-    background: -webkit-linear-gradient(top left, #009970, #84DD63);
-    background: linear-gradient(to bottom right, #009970, #84DD63);
+    background: #8D1725;
+    background: -webkit-linear-gradient(to right, #EA384D, #8D1725);
+    background: linear-gradient(to right, #EA384D, #8D1725);
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     padding: 30px;
@@ -248,6 +258,6 @@ nav a:hover::before {
 }
 
 .contentVideo {
-    border: 5px solid #84DD63;
+    border: 5px solid #8D1725;
     width: 700px;
 }
